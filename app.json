@@ -1,0 +1,25 @@
+{
+  "name": "Smooch First Message Response",
+  "description": "Detect sentiment of user messages. Don't forget to point a `message:appUser` webhook at this service once deployed.",
+  "repository": "https://github.com/spasiu/smooch-first-message-response.git",
+  "logo": "https://website.smooch.io/sm_logo_fb.jpg",
+  "keywords": ["smooch", "whispers", "node"],
+  "env": {
+    "RESPONSE": {
+      "description": "The automated response you want to send",
+      "value": ""
+    },
+    "SMOOCH_APP_ID": {
+      "description": "Smooch app ID",
+      "value": ""
+    },
+    "SMOOCH_ACCOUNT_KEY_ID": {
+      "description": "Smooch account level key ID",
+      "value": ""
+    },
+    "SMOOCH_ACCOUNT_SECRET": {
+      "description": "Smooch account level secret",
+      "value": ""
+    }
+  }
+}

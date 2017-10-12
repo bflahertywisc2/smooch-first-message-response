@@ -1,0 +1,28 @@
+{
+  "name": "smooch-first-message-response",
+  "version": "1.0.0",
+  "description": "Send an automated response to a first message",
+  "main": "index.js",
+  "engines": {
+    "node": "8.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spasiu/smooch-first-message-response.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spasiu/smooch-first-message-response/issues"
+  },
+  "homepage": "https://github.com/spasiu/smooch-first-message-response#readme",
+  "dependencies": {
+    "body-parser": "1.18.2",
+    "express": "4.16.2",
+    "smooch-core": "5.2.0"
+  }
+}
