@@ -1,7 +1,7 @@
 # smooch-first-message-response
 Send an automated response to a first message
 
-
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ## Setup:
 
