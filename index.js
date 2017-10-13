@@ -32,7 +32,7 @@ async function webhookHandler(req, res) {
 		// if these are not the first messages, bail
 		if (messageData.messages > req.body.messages) return res.end();
 
-		await smooch.appUsers.postMessage(appId, userId, {
+		await smooch.appUsers.sendMessage(appId, userId, {
 			text: response,
 			type: 'text',
 			role: 'appMaker'
