@@ -18,24 +18,31 @@ const smooch = new Smooch({
 
 express()
 	.use(bodyParser.json())
-	.use(webhookHandler)
-	.listen(PORT, () => console.log(`Running on port ${PORT}`));
+	.post('/', webhookHandler)
+	.listen(port, () => console.log(`Running on port ${port}`));
 
 async function webhookHandler(req, res) {
-	// if not an appUser message event, bail
-	if (req.body.trigger !== 'message:appUser') return res.end();
-	
-	const userId = req.body.appUser._id;
-	const messageData = await smooch.appUsers.getMessages(appId, userId);
+	try {
+		// if not an appUser message event, bail
+		if (req.body.trigger !== 'message:appUser') return res.end();
+		
+		const userId = req.body.appUser._id;
+		const messageData = await smooch.appUsers.getMessages(appId, userId);
 
-	// if these are not the first messages, bail
-	if (messageData.messages > req.body.messages) return res.end();
+		// if these are not the first messages, bail
+		if (messageData.messages > req.body.messages) return res.end();
 
-	smooch.appUsers.postMessage(appId, userId, {
-		text: response,
-		type: 'text',
-		role: 'appMaker'
-	});
+		await smooch.appUsers.postMessage(appId, userId, {
+			text: response,
+			type: 'text',
+			role: 'appMaker'
+		});
 
-	res.end();
+		res.end();
+	}
+
+	catch (err) {
+		console.error(err);
+		res.end();
+	}
 }
