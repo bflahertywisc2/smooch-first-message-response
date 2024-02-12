@@ -4,7 +4,7 @@ const express = require('express');
 const Smooch = require('smooch-core');
 const bodyParser = require('body-parser');
 
-const port = 80;
+const port = "80";
 const response = process.env.RESPONSE;
 const appId = process.env.SMOOCH_APP_ID;
 const keyId = process.env.SMOOCH_ACCOUNT_KEY_ID;
