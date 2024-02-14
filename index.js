@@ -20,7 +20,10 @@ const smooch = new Smooch({
 express()
 	.use(bodyParser.json())
 	.post('/', webhookHandler)
-	.listen(port, () => console.log(`Running on port ${port}`));
+	.listen(port, () => console.log(`Running on port ${port}`)
+	console.log(${appId})
+
+);
 
 async function webhookHandler(req, res) {
 	// if secret is set and doesn't match, bail
