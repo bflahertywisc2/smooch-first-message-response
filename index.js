@@ -24,6 +24,8 @@ express()
 	
 );
 
+console.log(`AppId ${appId}`);
+
 async function webhookHandler(req, res) {
 	// if secret is set and doesn't match, bail
 	if (webhookSecret && headers['x-api-key'] !== webhookSecret) return res.end();
