@@ -7,19 +7,19 @@
   "env": {
     "RESPONSE": {
       "description": "The automated response you want to send",
-      "value": ""
+      "value": "hello there"
     },
     "SMOOCH_APP_ID": {
       "description": "Smooch app ID",
-      "value": ""
+      "value": "garbage"
     },
     "SMOOCH_ACCOUNT_KEY_ID": {
       "description": "Smooch account level key ID",
-      "value": ""
+      "value": "garbage2"
     },
     "SMOOCH_ACCOUNT_SECRET": {
       "description": "Smooch account level secret",
-      "value": ""
+      "value": "garbage3"
     }
   }
 }
