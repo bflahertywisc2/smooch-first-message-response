@@ -11,15 +11,15 @@
     },
     "SMOOCH_APP_ID": {
       "description": "Smooch app ID",
-      "value": "garbage"
+      "value": "appJSONsetAppID"
     },
     "SMOOCH_ACCOUNT_KEY_ID": {
       "description": "Smooch account level key ID",
-      "value": "garbage2"
+      "value": "appJSONsetKID"
     },
     "SMOOCH_ACCOUNT_SECRET": {
       "description": "Smooch account level secret",
-      "value": "garbage3"
+      "value": "appJSONsetAS"
     }
   }
 }
